@@ -52,3 +52,13 @@ def decrypt(sums_with_char_removed:list) ->str:
 	sum_of_sums = sum(sums_with_char_removed)
 	divisor = len(sums_with_char_removed)
 	sum_of_all_chars = sum_of_sums // (divisor) - 1
+
+	
+	decrypted_name = ""
+
+	for i in range(len(sum_of_all_chars)):
+		abjad_code = sum_of_all_chars - sums_with_char_removed[i]
+		decrypted_char = abjad2char[abjad_code]
+		decrypted_name += decrypted_char
+	
+	return(decrypted_name)

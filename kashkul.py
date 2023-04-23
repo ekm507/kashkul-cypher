@@ -16,3 +16,8 @@ abjad2char = {1: 'ا', 2: 'ب', 3: 'ج', 4: 'د', 5: 'ه',
               300: 'ش', 400: 'ت', 500: 'ث', 600: 'خ', 700: 'ذ',
               800: 'ض', 900: 'ظ', 1000: 'غ'}
 
+
+def abjad_sum(input):
+	abjad_code = sum(list(char2abjad[item] for item in input))
+	return abjad_code
+

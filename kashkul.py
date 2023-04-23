@@ -50,8 +50,8 @@ def encrypt(name: str) -> str:
 
 def decrypt(sums_with_char_removed:list) ->str:
 	sum_of_sums = sum(sums_with_char_removed)
-	divisor = len(sums_with_char_removed)
-	sum_of_all_chars = sum_of_sums // (divisor) - 1
+	divisor = len(sums_with_char_removed) - 1
+	sum_of_all_chars = sum_of_sums // (divisor)
 
 	
 	decrypted_name = ""

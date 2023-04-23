@@ -39,3 +39,7 @@ def encrypt(name: str) -> str:
 	- کشکول #شیخ_بهایی
 	"""
 
+	# TODO: normalize name.
+	
+	for i, removed_char in enumerate(name):
+		name_with_removed_char = remove_a_char(name, i)

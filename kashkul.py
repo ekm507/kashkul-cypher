@@ -18,6 +18,9 @@ abjad2char = {1: 'ا', 2: 'ب', 3: 'ج', 4: 'د', 5: 'ه',
 
 
 def abjad_sum(input):
+	"""
+	calculates Jomal sum
+	"""
 	abjad_code = sum(list(char2abjad[item] for item in input))
 	return abjad_code
 

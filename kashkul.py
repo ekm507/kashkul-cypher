@@ -41,5 +41,8 @@ def encrypt(name: str) -> str:
 
 	# TODO: normalize name.
 	
+	sums_with_char_removed = list()
 	for i, removed_char in enumerate(name):
 		name_with_removed_char = remove_a_char(name, i)
+		sums_with_char_removed.append(abjad_sum(name_with_removed_char))
+

@@ -47,3 +47,8 @@ def encrypt(name: str) -> str:
 		sums_with_char_removed.append(abjad_sum(name_with_removed_char))
 
 	return sums_with_char_removed
+
+def decrypt(sums_with_char_removed:list) ->str:
+	sum_of_sums = sum(sums_with_char_removed)
+	divisor = len(sums_with_char_removed)
+	sum_of_all_chars = sum_of_sums // (divisor) - 1

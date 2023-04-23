@@ -24,6 +24,8 @@ def abjad_sum(input):
 	abjad_code = sum(list(char2abjad[item] for item in input))
 	return abjad_code
 
+def remove_a_char(name, char_index: int) -> str:
+	return ''.join([name[:char_index], name[char_index + 1:]])
 
 
 def encrypt(name: str) -> str:
